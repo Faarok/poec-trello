@@ -3421,19 +3421,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Svein\\.nuget\\packages\\": {}
+    "/home/mathys/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Programmation\\poec-csharp\\fil_rouge\\fil_rouge.csproj",
+      "projectUniqueName": "/home/mathys/Documents/perso/POEC/Csharp/poec-trello/fil_rouge.csproj",
       "projectName": "fil_rouge",
-      "projectPath": "F:\\Programmation\\poec-csharp\\fil_rouge\\fil_rouge.csproj",
-      "packagesPath": "C:\\Users\\Svein\\.nuget\\packages\\",
-      "outputPath": "F:\\Programmation\\poec-csharp\\fil_rouge\\obj\\",
+      "projectPath": "/home/mathys/Documents/perso/POEC/Csharp/poec-trello/fil_rouge.csproj",
+      "packagesPath": "/home/mathys/.nuget/packages/",
+      "outputPath": "/home/mathys/Documents/perso/POEC/Csharp/poec-trello/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Svein\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/mathys/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -3497,7 +3497,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
       }
     }
   }

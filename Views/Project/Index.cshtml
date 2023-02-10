@@ -1,4 +1,4 @@
-<div>
+@*<div>
     @foreach(var project in @Model)
     {
         <ul>
@@ -12,4 +12,18 @@
             <li><a asp-controller="Project" asp-action="Details">Details</a></li>
         </ul>
     }
+</div>*@
+<div class="page">
+    @foreach (var project in @Model)
+    {   
+        <div class="project-container">
+             <div class="project-description">
+                 <h1>@project.Name</h1>
+             </div>
+            <div class="project-button-container">
+                <button class="project-button">Go</button>
+            </div>
+        </div>       
+    }
+    
 </div>
