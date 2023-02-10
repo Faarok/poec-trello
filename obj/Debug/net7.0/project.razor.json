@@ -18708,6 +18708,11 @@
       "FilePath": "f:\\Programmation\\poec-csharp\\fil_rouge\\Views\\User\\Details.cshtml",
       "TargetPath": "Views\\User\\Details.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\Programmation\\poec-csharp\\fil_rouge\\Views\\Project\\Details.cshtml",
+      "TargetPath": "Views\\Project\\Details.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.3"

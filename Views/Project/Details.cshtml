@@ -1,0 +1,59 @@
+<div>
+    <ul>
+        <li>@Model.Name
+            <ul>
+                <li>User list
+                    <ul>
+                        @foreach(var row in RepoTools.repoProjectUser.ReadAll())
+                        {
+                            if(row.ProjectID == @Model.ID)
+                            {
+                                var user = RepoTools.repoUser.Read(row.UserID);
+                                <li><a asp-controller="User" asp-action="Details" asp-route-id="@user.ID">@user.Name</a></li>
+                            }
+                        }
+                    </ul>
+                </li>                
+                <li>Lists
+                    <ul>
+                        @foreach(var list in RepoTools.repoList.ReadAll())
+                        {
+                            if(list.ProjectID == @Model.ID)
+                            {
+                                <li>@list.Name
+                                    <ul>
+                                        @foreach(var card in RepoTools.repoCard.ReadAll())
+                                        {
+                                            if(list.ID == card.ListID)
+                                            {
+                                                <li>@card.Title
+                                                    <ul>
+                                                        @foreach(var comment in RepoTools.repoComment.ReadAll())
+                                                        {
+                                                            if(comment.CardID == card.ID)
+                                                            {
+                                                                User userComment = RepoTools.repoUser.Read(comment.UserID);
+                                                                <li>@comment.Content <br>Par <i>@userComment.Name</i></li>
+                                                            }
+                                                        }
+                                                    </ul>
+                                                </li>
+                                                @foreach(var tag in RepoTools.repoTag.ReadAll())
+                                                {
+                                                    if(card.ID == tag.CardID)
+                                                    {
+                                                        <li>@tag.Name, @tag.Color</li>
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    </ul>
+                                </li>
+                            }
+                        }
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>

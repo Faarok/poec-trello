@@ -9,7 +9,7 @@
                 </p>
             </li>
             <li>@project.CreationDate.ToString("yyyy-MM-dd")</li>
-            <li><a asp-controller="Project" asp-action="Details">Details</a></li>
+            <li><a asp-controller="Project" asp-action="Details" asp-route-id="@project.ID">Details</a></li>
         </ul>
     }
 </div>
