@@ -1,0 +1,10 @@
+<div>
+    @foreach(var user in @Model)
+    {
+        <ul>
+            <li>@user.Name</li>
+            <li>@user.Email</li>
+            <li><a asp-controller="User" asp-action="Details" asp-route-id="@user.ID">Details</a></li>
+        </ul>
+    }
+</div>

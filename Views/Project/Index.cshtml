@@ -1,0 +1,15 @@
+<div>
+    @foreach(var project in @Model)
+    {
+        <ul>
+            <li>Name : @project.Name</li>
+            <li>Description :
+                <p>
+                    @project.Description
+                </p>
+            </li>
+            <li>@project.CreationDate.ToString("yyyy-MM-dd")</li>
+            <li><a asp-controller="Project" asp-action="Details">Details</a></li>
+        </ul>
+    }
+</div>

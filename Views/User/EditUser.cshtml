@@ -1,0 +1,15 @@
+@model User
+
+<div>
+    <form asp-controller="User" asp-action="EditUser">
+        <h2>Editing : @Model.Name</h2>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" value="@Model.Name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" value="@Model.Email">
+
+        <button type="submit">Submit</button>
+    </form>
+</div>

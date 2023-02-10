@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\fil_rouge.props" />
+</Project>

@@ -1,0 +1,14 @@
+@model Project
+
+<div>
+    <form method="post" action="/Project/CreateProject">
+        <label for="name">Project name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="description">Project description</label>
+        <textarea name="description" id="description" placeholder="Describe your project..."></textarea>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</div>
